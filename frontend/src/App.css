@@ -1,0 +1,54 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-section {
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #fff, #888);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #a1a1aa;
+  margin-top: 1rem;
+}
+
+.glow {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+  top: -200px;
+  left: -200px;
+  z-index: -1;
+  filter: blur(80px);
+  opacity: 0.3;
+}
+
+.glow-2 {
+  position: fixed;
+  bottom: -200px;
+  right: -200px;
+  background: radial-gradient(circle, var(--secondary-glow) 0%, transparent 70%);
+  opacity: 0.2;
+}

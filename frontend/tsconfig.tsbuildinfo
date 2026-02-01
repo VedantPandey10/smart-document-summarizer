@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/loader.tsx","./src/components/modeselector.tsx","./src/components/queryinput.tsx","./src/components/summaryview.tsx","./src/components/uploadform.tsx"],"errors":true,"version":"5.9.3"}
