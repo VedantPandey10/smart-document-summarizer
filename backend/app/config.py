@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     
     # OpenAI Configuration
     openai_api_key: str
-    openai_model: str = "gpt-3.5-turbo"
+    openai_model: str = "gpt-4o-mini"
     max_tokens: int = 1000
     temperature: float = 0.7
     
@@ -21,11 +21,17 @@ class Settings(BaseSettings):
     allowed_extensions: list[str] = [".pdf", ".txt"]
     
     # CORS Configuration
-    cors_origins: list[str] = ["http://localhost:5173", "http://localhost:3000"]
+    cors_origins: list[str] = [
+        "http://localhost:5173", 
+        "http://localhost:3000",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:3000"
+    ]
     
     class Config:
         env_file = "../.env"
         env_file_encoding = "utf-8"
+        extra = "ignore"
 
 
 settings = Settings()
